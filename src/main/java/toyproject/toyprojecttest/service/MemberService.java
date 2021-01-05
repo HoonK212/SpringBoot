@@ -1,5 +1,6 @@
 package toyproject.toyprojecttest.service;
 
+import org.springframework.stereotype.Service;
 import toyproject.toyprojecttest.domain.Member;
 import toyproject.toyprojecttest.repository.MemberRepository;
 import toyproject.toyprojecttest.repository.MemoryMemberRepository;
@@ -7,6 +8,7 @@ import toyproject.toyprojecttest.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
