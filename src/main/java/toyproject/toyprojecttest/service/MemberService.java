@@ -5,10 +5,12 @@ import toyproject.toyprojecttest.domain.Member;
 import toyproject.toyprojecttest.repository.MemberRepository;
 import toyproject.toyprojecttest.repository.MemoryMemberRepository;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 //@Service
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
